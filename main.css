@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 47rem;
+  background-image: url(./imagens/background_image.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+header .container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header li {
+  display: inline;
+}
+
+header ul {
+  margin-right: 100px;
+}
+
+header li a {
+  color: white;
+  margin-left: 38px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  transition: border-bottom 0.3s ease-out;
+}
+
+header li a:hover {
+  border-bottom: solid 4px rgb(23, 225, 131);
+}
+
+.container > h1 {
+  margin-left: 100px;
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 2px 2px #000;
+}
+
+body {
+  background-color: #fff;
+  color: #050000;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+#hero {
+  padding: 200px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#hero .cta {
+  background-color: #15bc6e;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  padding: 40px 45px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#hero .cta:hover {
+  background-color: #083a0b;
+}
+
+#games {
+  height: 80rem;
+}
+
+#games .texto-link {
+}
+
+#position {
+  position: relative;
+}
+
+.extras {
+  position: absolute;
+  top: 10rem;
+  left: -550px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background-color: #15bc6e;
+}
+
+.extras img {
+  position: absolute;
+  bottom: 70px;
+  left: 450px;
+  height: 1000px;
+}
+
+.texto-link {
+  max-width: 500px;
+  font-size: 30px;
+}
+#characters {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#characters h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#characters ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#characters li {
+  display: inline-block;
+  margin: 0 20px;
+  vertical-align: top;
+}
+
+#characters a {
+  color: #000000;
+  display: block;
+  text-decoration: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#characters a:hover {
+  opacity: 0.8;
+}
+
+#characters img {
+  display: block;
+  margin: 0 auto;
+}
+
+#characters span {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#history {
+  padding: 100px 0;
+  text-align: center;
+}
+
+#history h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#history p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+#history .cta {
+  background-color: #cf5c36;
+  border: none;
+  color: #000000;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
