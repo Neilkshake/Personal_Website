@@ -13,11 +13,10 @@
         <h1>Zelda</h1>
         <nav>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Jogos</a></li>
-            <li><a href="#">Personagens</a></li>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#protagonist">Protagonista</a></li>
+            <li><a href="#games">Jogos</a></li>
+            <li><a href="#history">História</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -27,37 +26,112 @@
       </section>
       </header>
       
-      <section id="games">
-      <div id="position">
-        <div class="extras">
-        <img src="./imagens/Link.png">
-       </div>
-      </div>
-       <div id="texto-center">
-        <div class="texto-link">
-          <p> ipsum dolo sit amet, consectetur adipisicing elit. Soluta fuga sint voluptatibus, ex, facilis nobis pariatur sequi sunt ipsum esse quas, amet minima deserunt harum ipsa quis. Neque, natus atque.</p>
+      <section id="protagonist">
+
+          <div class="section-1">
+            <div class="position">
+              <div class="link">
+                <span class="circle">circle</span>
+                <img src="./imagens/Link.png">
+              </div>
+          </div>
+        <div class="texto">
+          <p><span class="protagonista">Link</span> é o protagonista da franquia de jogos The Legend of Zelda. Ele é geralmente retratado como um corajoso garoto ou adolescente com uma vestimenta verde, que abandona sua casa e seus parentes para perseguir o seu destino: lutar contra as forças do mal que ameaçam a terra 1. Em um dos jogos da série, Link é convocado por Impa, a babá real, para salvar a Princesa Zelda do maligno Príncipe das Trevas, Gannon. Link encontra os pedaços da Triforce da Sabedoria antes de Gannon e no final destrói o vilão com uma Flecha de Prata, salvando Zelda</p>
         </div>
-       </div>
+          </div>
+        
+
       </section>
-      
+    
+      <section id="games">
+        <div class="flexbox">
+          <h3>Jogos</h3>
+        
+          <div class="articles">
+
+
+            <article>
+              <img src="./imagens/skyward.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+            <article>
+              <img src="./imagens/minishcap.jpg" alt="capa do jogo The Legend of Zelda: Minish cap">
+            </article>
+           
+            <article>
+              <img src="./imagens/fourswords.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+            <article>
+              <img src="./imagens/Ocarina.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+            <article>
+              <img src="./imagens/Majoras.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+            <article>
+              <img src="./imagens/Princess.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+            <article>
+              <img src="./imagens/adventures.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+            <article>
+              <img src="./imagens/botw.jpg" alt="Capa do jogo The Legend of Zelda: Ocarina of time">
+            </article>
+
+          </div>
+
+
+            
+      </section>
+
       <section id="history">
-        <h3>História</h3>
-        <p>A história do mundo de Zelda é repleta de aventuras emocionantes, batalhas épicas e personagens inesquecíveis. Desde o primeiro jogo da série, lançado em 1986, até os títulos mais recentes, como Breath of the Wild, a saga de Zelda cativa fãs de todas as idades.</p>
-        <a href="#" class="cta">Saiba mais</a>
+
+    
+
+       <div class="triforce"><img src="./imagens/espadinha.png"></div> 
+       
+
+        <div class="historia">
+
+          <h3>História</h3>
+
+       <div class="resumo">
+
+         <p>A história de Zelda se passa no mundo de Hyrule, criado pelas três deusas Din, Nairu e Farore. O herói Link tem que proteger a princesa Zelda e a Triforce, uma relíquia mágica que pode realizar desejos ou causar destruição. O vilão Ganon quer se apoderar da Triforce e dominar Hyrule. A cronologia dos jogos é dividida em três linhas do tempo diferentes, dependendo do final de Ocarina of Time: uma em que Link foi derrotado por Ganon, outra em que Link voltou ao passado como criança e outra em que Link permaneceu no futuro como adulto. Cada linha do tempo tem vários jogos, os que inseri na seção acima é da linha do tempo onde ele volta ao passado</p>
+         
+       </div>
+       <a href="#" class="cta">Saiba mais</a> 
+       
+       </div>
+      
+
       </section>
       
       <section id="contact">
-        <h3>Contato</h3>
+      
+      
+        
+
         <form>
+
+          <h3>Contato</h3>
+
           <label for="name">Nome:</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
           
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
+          <input  type="email" id="email" name="email" placeholder="Digite seu email" required>
           
           <label for="message">Mensagem:</label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" placeholder="Digite a mensagem que quer enviar" required></textarea>
           
-          <input type="submit" value>
+        <input type="submit" value="Submit">
+          
+          </form>
+          </section>
   </body>
 </html>

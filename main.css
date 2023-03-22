@@ -2,6 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -44,9 +49,10 @@ header li a:hover {
 
 .container > h1 {
   margin-left: 100px;
-  font-size: 60px;
+  font-size: 75px;
   font-weight: bold;
-  text-shadow: 2px 2px #000;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -81,21 +87,38 @@ body {
 }
 
 #hero .cta:hover {
-  background-color: #083a0b;
+  background-color: #0e6914;
 }
 
-#games {
-  height: 80rem;
+#protagonist {
+  height: 75rem;
+  width: 100%;
 }
 
-#games .texto-link {
+.section-1 {
+  display: flex;
+  padding: 10px 0;
+  gap: 10px;
 }
 
-#position {
+.position {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.link {
   position: relative;
 }
 
-.extras {
+.link img {
+  max-width: 600px;
+  position: absolute;
+  top: 200px;
+  left: 19px;
+}
+
+.circle {
   position: absolute;
   top: 10rem;
   left: -550px;
@@ -105,85 +128,144 @@ body {
   background-color: #15bc6e;
 }
 
-.extras img {
-  position: absolute;
-  bottom: 70px;
-  left: 450px;
-  height: 1000px;
-}
-
-.texto-link {
-  max-width: 500px;
+.texto {
+  display: flex;
+  max-width: 1000px;
   font-size: 30px;
-}
-#characters {
-  padding: 100px 0;
-  text-align: center;
-}
-
-#characters h3 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 40px;
+  padding-left: 300px;
+  padding-top: 15rem;
+  align-items: flex-start;
 }
 
-#characters ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.protagonista {
+  font-size: 80px;
+  color: #15bc6e;
+  line-height: 69px;
 }
 
-#characters li {
-  display: inline-block;
-  margin: 0 20px;
-  vertical-align: top;
+.texto p {
+  padding-top: 80px;
+  text-align: left;
+  position: relative;
 }
 
-#characters a {
-  color: #000000;
-  display: block;
-  text-decoration: none;
-  transition: opacity 0.3s ease-in-out;
+section#games {
+  height: 80rem;
+  padding: 250px 0;
 }
 
-#characters a:hover {
-  opacity: 0.8;
+#games h3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  font-size: 50px;
 }
 
-#characters img {
-  display: block;
-  margin: 0 auto;
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#characters span {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 20px;
+.articles img {
+  width: 260px;
+  height: 260px;
+  margin: 40px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.articles img:hover {
+  opacity: 0.5;
+}
+
+section#history {
+  margin-top: 100px;
 }
 
 #history {
-  padding: 100px 0;
-  text-align: center;
+  display: flex;
 }
 
-#history h3 {
+.triforce img {
+  height: 500px;
+  margin-left: 50px;
+}
+
+.historia {
+  margin-left: 100px;
+}
+
+.historia > h3 {
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+}
+
+.resumo {
+  font-size: 15px;
+  display: flex;
+  max-width: 900px;
   font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-#history p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 40px;
+  margin-top: 5rem;
 }
 
 #history .cta {
-  background-color: #cf5c36;
+  background-color: #15bc6e;
   border: none;
-  color: #000000;
+  color: #fff;
+  margin: 25px;
   display: inline-block;
-  font-size: 18px;
+  font-size: 25px;
+  border-radius: 50px;
   font-weight: bold;
+  padding: 20px 25px;
+  margin-left: 360px;
   text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#history .cta:hover {
+  background-color: #0e6914;
+}
+
+#contact {
+  display: flex;
+  padding: 250px 0;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 200px;
+  border: solid green;
+  align-items: center;
+  width: 300px;
+  background-image: url(./imagens/background_image.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+form h3 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+input {
+  width: 300px;
+  margin: 5px 0px;
+  height: 35px;
+  padding: 10px;
+}
+
+form textarea {
+  width: 300px;
+  height: 60px;
+  resize: none;
 }
